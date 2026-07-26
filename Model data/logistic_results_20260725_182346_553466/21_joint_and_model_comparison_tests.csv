@@ -1,0 +1,6 @@
+﻿test,statistic,df,p_value,covariance_type
+LR: add six factors to controls-only model,24.01141126,6,0.0005197399657,Likelihood ratio (MLE log-likelihoods)
+HC3 Wald: six factor coefficients jointly equal zero,24.10420112,6,0.0004997029576,HC3
+LR sensitivity: cubic-spline versus linear log review length,8.119743555,3,0.04360071723,Likelihood ratio (MLE log-likelihoods)
+LR: add all factor-by-game interactions,182.4753577,24,2.464988441e-26,Likelihood ratio (MLE log-likelihoods)
+HC3 Wald: all factor-by-game interactions jointly equal zero,180.0364983,24,7.209603219e-26,HC3

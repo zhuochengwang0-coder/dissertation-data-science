@@ -1,0 +1,2 @@
+﻿n,parameters,cooks_d_flag_rule,cooks_d_cutoff,cooks_d_flagged_n,leverage_flag_rule,leverage_cutoff,leverage_flagged_n,abs_standard_resid_gt_3_n,maximum_cooks_d,maximum_hat_diag,maximum_abs_standard_resid
+37457,14,Cook's D > 4/n,0.0001067891182,1238,hat diagonal > 2p/n,0.0007475238273,2244,0,0.0008599687138,0.003662931297,2.674192066

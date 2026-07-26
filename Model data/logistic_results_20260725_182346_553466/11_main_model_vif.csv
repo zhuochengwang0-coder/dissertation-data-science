@@ -1,0 +1,14 @@
+﻿term,vif
+log_review_words,2.121946364
+"C(game, Treatment(reference='Cyberpunk 2077'))[T.Monster Hunter Wilds]",1.804722
+"C(game, Treatment(reference='Cyberpunk 2077'))[T.Elden Ring]",1.728781116
+"C(game, Treatment(reference='Cyberpunk 2077'))[T.Hogwarts Legacy]",1.620139939
+"C(game, Treatment(reference='Cyberpunk 2077'))[T.The Witcher 3: Wild Hunt]",1.554995939
+combat,1.50751011
+narrative,1.487564841
+progression,1.482333584
+challenge,1.298308506
+exploration,1.261881466
+immersion,1.230926639
+steam_purchase,1.106665185
+received_for_free,1.013823716

@@ -1,0 +1,5 @@
+﻿step,n,removed_from_previous_step
+"Validated frozen V5 excluded-1,300 input",98173,0
+Recommended reviews (voted_up = 1),86064,12109
+Recommended and review_word_count >= 10,37457,48607
+Plus playtime_at_review_hours > 0,37457,0

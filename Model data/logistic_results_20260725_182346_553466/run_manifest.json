@@ -1,0 +1,101 @@
+{
+  "analysis_name": "Final Logistic regression — frozen V5 excluded-1,300",
+  "run_started": "2026-07-25T18:23:46.553466",
+  "run_finished": "2026-07-25T18:23:52.626541",
+  "input_validation": {
+    "input_path": "C:\\Users\\14499\\PyCharmMiscProject\\steam_reviews_analysis_v5_excl_1300_20260724.csv",
+    "sha256": "f7cff7190248910b26fa991c994cff51dd478152ac4dcbb20f70a05ba3853aea",
+    "rows": 98173,
+    "columns": 31,
+    "unique_recommendation_ids": 98173,
+    "duplicate_recommendation_ids": 0,
+    "games": [
+      "Cyberpunk 2077",
+      "Elden Ring",
+      "Hogwarts Legacy",
+      "Monster Hunter Wilds",
+      "The Witcher 3: Wild Hunt"
+    ],
+    "key_field_missing_total": 0
+  },
+  "settings": {
+    "recommended_reviews_only": true,
+    "minimum_review_words": 10,
+    "playtime_at_review_hours_must_be_positive": true,
+    "primary_quantile": 0.75,
+    "high_playtime_rule": "playtime_at_review_hours >= within-game Q75",
+    "factors": [
+      "combat",
+      "challenge",
+      "progression",
+      "exploration",
+      "narrative",
+      "immersion"
+    ],
+    "reference_game": "Cyberpunk 2077",
+    "covariance_type": "HC3",
+    "alpha": 0.05,
+    "strict_input_checks": true
+  },
+  "sample": {
+    "primary_n": 37457,
+    "primary_high_playtime_n": 9366,
+    "primary_low_playtime_n": 28091
+  },
+  "formulas": {
+    "main": "high_playtime ~ combat + challenge + progression + exploration + narrative + immersion + log_review_words + C(game, Treatment(reference='Cyberpunk 2077')) + steam_purchase + received_for_free",
+    "baseline": "high_playtime ~ log_review_words + C(game, Treatment(reference='Cyberpunk 2077')) + steam_purchase + received_for_free",
+    "no_word_length": "high_playtime ~ combat + challenge + progression + exploration + narrative + immersion + C(game, Treatment(reference='Cyberpunk 2077')) + steam_purchase + received_for_free",
+    "spline_word_length": "high_playtime ~ combat + challenge + progression + exploration + narrative + immersion + bs(log_review_words, df=4, degree=3, include_intercept=False) + C(game, Treatment(reference='Cyberpunk 2077')) + steam_purchase + received_for_free",
+    "interaction": "high_playtime ~ (combat + challenge + progression + exploration + narrative + immersion) * C(game, Treatment(reference='Cyberpunk 2077')) + log_review_words + steam_purchase + received_for_free",
+    "leave_one_game_out": "high_playtime ~ combat + challenge + progression + exploration + narrative + immersion + log_review_words + C(game) + steam_purchase + received_for_free",
+    "game_specific": "high_playtime ~ combat + challenge + progression + exploration + narrative + immersion + log_review_words + steam_purchase + received_for_free"
+  },
+  "software": {
+    "python": "3.12.2 (tags/v3.12.2:6abddd9, Feb  6 2024, 21:26:36) [MSC v.1937 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "pandas": "2.2.3",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "statsmodels": "0.14.6",
+    "patsy": "1.0.2",
+    "matplotlib": "3.10.8"
+  },
+  "main_model": {
+    "converged": true,
+    "n": 37457,
+    "log_likelihood": -20830.657548078387,
+    "aic": 41689.31509615677,
+    "mcfadden_pseudo_r2": 0.011139276819692956
+  },
+  "fit_warning_count": 0,
+  "secondary_analysis_error_count": 0,
+  "output_directory": "C:\\Users\\14499\\PyCharmMiscProject\\logistic_results_20260725_182346_553466",
+  "output_files": [
+    "01_sample_flow.csv",
+    "02_primary_q75_thresholds.csv",
+    "03_descriptive_by_game.csv",
+    "04_factor_descriptives.csv",
+    "05_simple_separation_cells.csv",
+    "06_factor_correlations.csv",
+    "07_primary_model_sample_q75.csv",
+    "08_main_model_all_terms.csv",
+    "09_main_model_six_factors.csv",
+    "10_main_model_summary.txt",
+    "11_main_model_vif.csv",
+    "12_main_model_or_forest.png",
+    "13_influence_top50_by_cooks_d.csv",
+    "14_influence_summary.csv",
+    "15_sensitivity_q70_q75_q80_thresholds.csv",
+    "16_sensitivity_q70_q75_q80_factors.csv",
+    "17_sensitivity_leave_one_game_out.csv",
+    "18_exploratory_game_specific_models.csv",
+    "19_sensitivity_specification_and_influence.csv",
+    "20_exploratory_game_interaction_terms.csv",
+    "21_joint_and_model_comparison_tests.csv",
+    "22_model_fit_statistics.csv",
+    "23_fit_warnings.csv",
+    "24_secondary_analysis_errors.csv",
+    "README_RESULTS.txt"
+  ]
+}
