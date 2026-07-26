@@ -1,0 +1,22 @@
+﻿variable,level,low_playtime_n,high_playtime_n
+combat,0,22018,6917
+combat,1,6073,2449
+challenge,0,24251,7757
+challenge,1,3840,1609
+progression,0,25131,7874
+progression,1,2960,1492
+exploration,0,24545,7807
+exploration,1,3546,1559
+narrative,0,18802,5797
+narrative,1,9289,3569
+immersion,0,25216,8085
+immersion,1,2875,1281
+steam_purchase,0,4414,1478
+steam_purchase,1,23677,7888
+received_for_free,0,27628,9274
+received_for_free,1,463,92
+game,Cyberpunk 2077,6096,2032
+game,Elden Ring,4889,1630
+game,Hogwarts Legacy,5925,1976
+game,Monster Hunter Wilds,5490,1831
+game,The Witcher 3: Wild Hunt,5691,1897

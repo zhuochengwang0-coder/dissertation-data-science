@@ -1,0 +1,40 @@
+{
+  "row_count": 20000,
+  "column_count": 25,
+  "unique_recommendation_id_count": 20000,
+  "duplicate_recommendation_id_count": 0,
+  "language_counts": {
+    "english": 20000
+  },
+  "empty_review_count": 96,
+  "at_least_10_words_count": 9117,
+  "missing_value_counts": {
+    "game": 0,
+    "appid": 0,
+    "recommendation_id": 0,
+    "language": 0,
+    "review": 96,
+    "voted_up": 0,
+    "playtime_at_review_hours": 0,
+    "playtime_forever_hours": 0,
+    "playtime_last_two_weeks_hours": 0,
+    "deck_playtime_at_review_hours": 18963,
+    "timestamp_created": 0,
+    "timestamp_updated": 0,
+    "last_played": 0,
+    "votes_up": 0,
+    "votes_funny": 0,
+    "weighted_vote_score": 0,
+    "comment_count": 0,
+    "num_games_owned": 0,
+    "num_reviews_by_author": 0,
+    "steam_purchase": 0,
+    "received_for_free": 0,
+    "written_during_early_access": 0,
+    "primarily_steam_deck": 0,
+    "scraped_at_utc": 0,
+    "review_word_count": 0
+  },
+  "csv_size_bytes": 7513962,
+  "csv_sha256": "f8cafa50718f03a184c688fad22536328417cc79172363bf4f0dafd5fa95256c"
+}

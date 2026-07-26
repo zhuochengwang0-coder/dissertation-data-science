@@ -1,0 +1,57 @@
+{
+  "game": "Elden Ring",
+  "appid": "1245620",
+  "target_unique_reviews": 20000,
+  "collected_unique_reviews": 20000,
+  "sampling_method": "Consecutive most-recent reviews using Steam cursor pagination",
+  "api_parameters": {
+    "filter": "recent",
+    "language": "english",
+    "review_type": "all",
+    "purchase_type": "all",
+    "num_per_page": 100
+  },
+  "fields": [
+    "game",
+    "appid",
+    "recommendation_id",
+    "language",
+    "review",
+    "voted_up",
+    "playtime_at_review_hours",
+    "playtime_forever_hours",
+    "playtime_last_two_weeks_hours",
+    "deck_playtime_at_review_hours",
+    "timestamp_created",
+    "timestamp_updated",
+    "last_played",
+    "votes_up",
+    "votes_funny",
+    "weighted_vote_score",
+    "comment_count",
+    "num_games_owned",
+    "num_reviews_by_author",
+    "steam_purchase",
+    "received_for_free",
+    "written_during_early_access",
+    "primarily_steam_deck",
+    "scraped_at_utc",
+    "review_word_count"
+  ],
+  "time_units": {
+    "playtime_at_review_hours": "hours",
+    "playtime_forever_hours": "hours",
+    "playtime_last_two_weeks_hours": "hours",
+    "deck_playtime_at_review_hours": "hours"
+  },
+  "timestamp_units": {
+    "timestamp_created": "Unix seconds UTC",
+    "timestamp_updated": "Unix seconds UTC",
+    "last_played": "Unix seconds UTC",
+    "scraped_at_utc": "ISO 8601 UTC"
+  },
+  "started_at_utc": "2026-07-19T16:23:54.888996+00:00",
+  "finished_at_utc": "2026-07-19T16:28:54.831726+00:00",
+  "pages_requested_this_run": 201,
+  "stop_reason": "target reached"
+}
